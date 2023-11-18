@@ -1,0 +1,290 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  display: grid;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  width: 100%;
+  height: auto;
+  background-image: url("../public/assets/img/Untitled-design-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: blueviolet; */
+  /* background-image: url("https://picsum.photos/2000/2000?random=1&?blur=3"); */
+ 
+}
+.App-header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  padding: 0em 1em;
+  flex-direction: row;
+  align-items: center;
+}
+
+.brand {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.navbar {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+
+.navbar-menu {
+  width: 100%;
+  margin: 0em 1em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.navbar-menu-items {
+  margin: 0 auto;
+  padding: 1em;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none; 
+}
+
+.navbar-menu-items:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.download {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4em;
+}
+
+.navbar-menu-items li {
+  width: fit-content;
+  height: fit-content;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;  
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center; 
+}
+
+
+
+.hero-content p {
+  padding: 0.5em 0;
+  font-size: 1.5rem;
+}
+
+.hero-btns {
+  width: 100%;
+  margin-top: 3em;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero-btns a {
+  width: 10em;
+  height: 2.5em;
+  text-align: center;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-btns a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.container-download {
+  width: 100%;
+  background-color: #fff;
+  height: 50vh;
+}
+
+.coming-soon-content {
+  width: 100%;
+  height: 50vh;
+}
+
+.App-footer {
+  background-color: #fff;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.brand-section {
+  width: 50%;
+  height: 100%;
+}
+
+.footer-links {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  border-left: #000 1px solid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-menu {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-menu a:hover {
+  color: #000;
+  text-decoration: underline; 
+}
+
+.footer-menu li {
+  width: fit-content;
+  height: fit-content;
+}
+
+
+.custom-nav{
+  height: calc(100vh - 65px);
+}
+
+.about-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background-position: center;
+  color: #fff;
+  font-size: larger;
+  background-image: url("../public/assets/img/social.jpeg");
+}
+
+
+#signUpForm {
+            max-width: 500px;
+        }
+        #signUpForm .form-header .stepIndicator.active {
+            font-weight: 600;
+        }
+        #signUpForm .form-header .stepIndicator.finish {
+            font-weight: 600;
+            color: #5a67d8;
+        }
+        #signUpForm .form-header .stepIndicator::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            z-index: 9;
+            width: 20px;
+            height: 20px;
+            background-color: #c3dafe;
+            border-radius: 50%;
+            border: 3px solid #ebf4ff;
+        }
+        #signUpForm .form-header .stepIndicator.active::before {
+            background-color: #a3bffa;
+            border: 3px solid #c3dafe;
+        }
+        #signUpForm .form-header .stepIndicator.finish::before {
+            background-color: #5a67d8;
+            border: 3px solid #c3dafe;
+        }
+        #signUpForm .form-header .stepIndicator::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 8px;
+            width: 100%;
+            height: 3px;
+            background-color: #f3f3f3;
+        }
+        #signUpForm .form-header .stepIndicator.active::after {
+            background-color: #a3bffa;
+        }
+        #signUpForm .form-header .stepIndicator.finish::after {
+            background-color: #5a67d8;
+        }
+        /* #signUpForm .form-header .stepIndicator:last-child:after {
+            display: none;
+        } */
+        #signUpForm input.invalid {
+            border: 2px solid #ffaba5;
+        }
+        /* #signUpForm .step {
+          display: none;
+        } */
